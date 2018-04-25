@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"></meta>
+<title>index</title>
+</head>
+
+<body>
+	<div>
+		<table>
+			<tbody>xxx
+			</tbody>
+			<thead>11233
+			</thead>
+			<tr th:each="user,userStat : ${session.user}">
+				<th scope="row" th:text="${user.userId}">1</th>
+				<td><img th:src="${user.userName}" /></td>
+				<td th:text="${user.userPwd}">Mark</td>
+				<td th:text="${user.userEmail}">Otto</td>
+				<td th:text="${user.userDescription}">@mdo</td>
+				<td th:text="${user.userPhone}">index</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
